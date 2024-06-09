@@ -1,0 +1,39 @@
+.manager_status {
+  padding-bottom: 8px;
+  .container {
+    button {
+      border: 0;
+      padding: 10px 18px;
+      border-radius: 10px;
+      background-color: #f1f4ff;
+      box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+    }
+    div {
+      margin-top: 18px;
+      position: relative;
+      padding: 18px;
+      background-color: #f1f4ff;
+      border-radius: 20px;
+      box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+      h3 {
+        @include font(400, 18px);
+        margin: 0;
+        margin-bottom: 24px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        b {
+          @include font(400, 18px);
+        }
+      }
+      p {
+        margin: 0;
+        position: absolute;
+        top: 18px;
+        right: 18px;
+      }
+    }
+  }
+}

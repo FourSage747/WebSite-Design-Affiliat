@@ -1,0 +1,39 @@
+.main-div {
+  position: relative;
+  svg:last-child {
+    position: absolute;
+    right: 20px;
+  }
+}
+.user_status {
+  padding: 8px 0;
+  .user_status_div {
+    position: relative;
+    padding: 18px;
+    background-color: #f1f4ff;
+    transition: background 0.5s ease;
+    border-radius: 20px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+    .user_status_normal_div {
+      h3 {
+        @include font(400, 18px);
+        margin: 0;
+      }
+      ul:first-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        b {
+          @include font(400, 18px);
+        }
+      }
+      ul:last-of-type {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}
