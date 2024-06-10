@@ -321,6 +321,16 @@ main {
   top: 18px;
   right: 18px;
 }
+.offers_status .container div button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  border: 0;
+  padding: 10px 40px;
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(to right, #70a9ff, #0149b4);
+}
 
 .offers_data {
   padding: 20px 0 60px 0;
@@ -398,6 +408,7 @@ main {
 }
 .offers_offers ul {
   display: flex;
+  justify-content: space-around;
 }
 .offers_offers ul li {
   display: flex;
@@ -405,65 +416,11 @@ main {
   gap: 3px;
   color: white;
 }
-.offers_offers ul li:first-child {
-  margin-right: 60px;
-}
-.offers_offers ul li:nth-child(2) {
-  margin-right: 80px;
-}
-.offers_offers ul li:nth-child(3) {
-  margin-right: 80px;
-}
-.offers_offers ul li:nth-child(4) {
-  margin-right: 90px;
-}
-.offers_offers ul li:nth-child(5) {
-  margin-right: 30px;
-}
-.offers_offers ul li:nth-child(6) {
-  margin-right: 30px;
+.offers_offers ul li span {
+  font-weight: 300;
+  font-size: 14px;
 }
 
-@media screen and (min-width: 1400px) {
-  .offers_offers ul li:first-child {
-    margin-right: 80px;
-  }
-  .offers_offers ul li:nth-child(2) {
-    margin-right: 100px;
-  }
-  .offers_offers ul li:nth-child(3) {
-    margin-right: 100px;
-  }
-  .offers_offers ul li:nth-child(4) {
-    margin-right: 110px;
-  }
-  .offers_offers ul li:nth-child(5) {
-    margin-right: 50px;
-  }
-  .offers_offers ul li:nth-child(6) {
-    margin-right: 50px;
-  }
-}
-@media screen and (min-width: 1500px) {
-  .offers_offers ul li:first-child {
-    margin-right: 100px;
-  }
-  .offers_offers ul li:nth-child(2) {
-    margin-right: 120px;
-  }
-  .offers_offers ul li:nth-child(3) {
-    margin-right: 120px;
-  }
-  .offers_offers ul li:nth-child(4) {
-    margin-right: 130px;
-  }
-  .offers_offers ul li:nth-child(5) {
-    margin-right: 70px;
-  }
-  .offers_offers ul li:nth-child(6) {
-    margin-right: 70px;
-  }
-}
 .offers_offers_list .offers_offers_list_ul {
   display: flex;
   flex-direction: column;
@@ -479,75 +436,71 @@ main {
   background: linear-gradient(to bottom, #70a9ff, #0149b4);
   color: white;
 }
+.offers_offers_list .offers_offers_list_ul .offers_offers_list_li:first-child ul li:nth-child(7) {
+  background-color: white;
+  color: black;
+}
+.offers_offers_list .offers_offers_list_ul .offers_offers_list_li:first-child ul li:nth-child(8) button {
+  background-color: white;
+  color: black;
+}
 .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
-.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul b {
-  font-weight: 300;
-  font-size: 10px;
+.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(7) {
+  width: 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #2e65f3;
+  padding: 5px 20px;
+  color: white;
 }
-.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:first-child {
-  margin-right: 30px;
+.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(7) div {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+  color: black;
 }
-.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(2) {
-  width: 150px;
-  margin-right: 40px;
+.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(7) div.show {
+  opacity: 1;
+  max-height: 1000px;
 }
-.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(3) {
-  margin-right: 60px;
+.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(7) div span {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 7px;
 }
-.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(4) {
-  margin-right: 80px;
+.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(7) div svg {
+  transform: rotate(180deg);
 }
-.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(5) {
-  margin-right: 70px;
-}
-.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(6) {
-  margin-right: 60px;
+.offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(8) button {
+  height: 100%;
+  border: 0;
+  border-radius: 20px;
+  background-color: #2e65f3;
+  padding: 7px 20px;
+  color: white;
 }
 
-@media screen and (min-width: 1400px) {
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:first-child {
-    margin-right: 50px;
-  }
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(2) {
-    margin-right: 60px;
-  }
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(3) {
-    margin-right: 80px;
-  }
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(4) {
-    margin-right: 100px;
-  }
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(5) {
-    margin-right: 90px;
-  }
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(6) {
-    margin-right: 80px;
-  }
-}
-@media screen and (min-width: 1500px) {
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:first-child {
-    margin-right: 50px;
-  }
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(2) {
-    width: 200px;
-    margin-right: 50px;
-  }
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(3) {
-    margin-right: 100px;
-  }
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(4) {
-    margin-right: 120px;
-  }
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(5) {
-    margin-right: 110px;
-  }
-  .offers_offers_list .offers_offers_list_ul .offers_offers_list_li ul li:nth-child(6) {
-    margin-right: 100px;
-  }
-}
 footer {
   padding: 13px 0;
   background: linear-gradient(to bottom, #70a9ff, #0149b4);

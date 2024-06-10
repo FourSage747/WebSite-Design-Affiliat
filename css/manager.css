@@ -465,6 +465,7 @@ main {
   box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
 }
 .manager_offers .container div div:last-child {
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   width: 400px;
   position: relative;
@@ -499,22 +500,25 @@ main {
   color: white;
 }
 .manager_offers .container .manager_offers_ul li:first-child {
-  margin-right: 80px;
+  margin-right: 40px;
 }
 .manager_offers .container .manager_offers_ul li:nth-child(2) {
-  margin-right: 120px;
+  margin-right: 100px;
 }
 .manager_offers .container .manager_offers_ul li:nth-child(3) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 .manager_offers .container .manager_offers_ul li:nth-child(4) {
-  margin-right: 80px;
+  margin-right: 40px;
 }
 .manager_offers .container .manager_offers_ul li:nth-child(5) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .manager_offers .container .manager_offers_ul li:nth-child(6) {
-  margin-right: 10px;
+  margin-right: 20px;
+}
+.manager_offers .container .manager_offers_ul li:nth-child(7) {
+  margin-right: 30px;
 }
 .manager_offers .container .manager_offers_ul2 {
   display: flex;
@@ -531,10 +535,43 @@ main {
   background: linear-gradient(to bottom, #70a9ff, #0149b4);
   color: white;
 }
+.manager_offers .container .manager_offers_ul2 .manager_offers_ul2_li:first-child ul li:nth-child(7) {
+  background-color: white;
+  color: black;
+}
 .manager_offers .container .manager_offers_ul2 .manager_offers_ul2_li ul {
   display: flex;
   align-items: center;
-  gap: 45px;
+}
+.manager_offers .container .manager_offers_ul2 .manager_offers_ul2_li ul li:first-child {
+  margin-right: 40px;
+}
+.manager_offers .container .manager_offers_ul2 .manager_offers_ul2_li ul li:nth-child(2) {
+  width: 140px;
+  margin-right: 20px;
+}
+.manager_offers .container .manager_offers_ul2 .manager_offers_ul2_li ul li:nth-child(3) {
+  margin-right: 40px;
+}
+.manager_offers .container .manager_offers_ul2 .manager_offers_ul2_li ul li:nth-child(4) {
+  margin-right: 30px;
+}
+.manager_offers .container .manager_offers_ul2 .manager_offers_ul2_li ul li:nth-child(5) {
+  margin-right: 40px;
+}
+.manager_offers .container .manager_offers_ul2 .manager_offers_ul2_li ul li:nth-child(6) {
+  margin-right: 30px;
+}
+.manager_offers .container .manager_offers_ul2 .manager_offers_ul2_li ul li:nth-child(7) {
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #2e65f3;
+  padding: 7px 20px;
+  color: white;
 }
 
 footer {

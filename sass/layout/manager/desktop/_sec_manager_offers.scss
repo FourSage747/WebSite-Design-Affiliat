@@ -12,6 +12,7 @@
         box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
       }
       div:last-child {
+        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
         box-sizing: border-box;
         width: 400px;
         position: relative;
@@ -45,22 +46,25 @@
         gap: 3px;
         color: white;
         &:first-child {
-          margin-right: 80px;
+          margin-right: 40px;
         }
         &:nth-child(2) {
-          margin-right: 120px;
+          margin-right: 100px;
         }
         &:nth-child(3) {
-          margin-right: 50px;
+          margin-right: 30px;
         }
         &:nth-child(4) {
-          margin-right: 80px;
+          margin-right: 40px;
         }
         &:nth-child(5) {
-          margin-right: 10px;
+          margin-right: 20px;
         }
         &:nth-child(6) {
-          margin-right: 10px;
+          margin-right: 20px;
+        }
+        &:nth-child(7) {
+          margin-right: 30px;
         }
       }
     }
@@ -76,29 +80,47 @@
         &:first-child {
           background: linear-gradient(to bottom, #70a9ff, #0149b4);
           color: white;
+          ul {
+            li:nth-child(7) {
+              background-color: white;
+              color: black;
+            }
+          }
         }
         ul {
           display: flex;
           align-items: center;
-          gap: 45px;
-          // li:first-child {
-          //   margin-right: 40px;
-          // }
-          // li:nth-child(2) {
-          //   margin-right: 40px;
-          // }
-          // li:nth-child(3) {
-          //   margin-right: 40px;
-          // }
-          // li:nth-child(4) {
-          //   margin-right: 40px;
-          // }
-          // li:nth-child(5) {
-          //   margin-right: 40px;
-          // }
-          // li:nth-child(6) {
-          //   margin-right: 40px;
-          // }
+          // gap: 45px;
+          li:first-child {
+            margin-right: 40px;
+          }
+          li:nth-child(2) {
+            width: 140px;
+            margin-right: 20px;
+          }
+          li:nth-child(3) {
+            margin-right: 40px;
+          }
+          li:nth-child(4) {
+            margin-right: 30px;
+          }
+          li:nth-child(5) {
+            margin-right: 40px;
+          }
+          li:nth-child(6) {
+            margin-right: 30px;
+          }
+          li:nth-child(7) {
+            margin-right: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #2e65f3;
+            padding: 7px 20px;
+            color: white;
+          }
         }
       }
     }
